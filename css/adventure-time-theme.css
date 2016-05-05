@@ -1,0 +1,26 @@
+/*No tocar este codigo*/ 
+.sidebar-closed > #sidebar > ul {
+    display: none;
+}
+
+.sidebar-closed #main-content {
+    margin-left: 0px;
+}
+
+.sidebar-closed #sidebar {
+    margin-left: -180px;
+}
+
+
+
+/* Colores
+gris Azulado #41495c
+gris claro #f0f0f0
+lila hover #9a4c9c
+gris icons #969696
+cian icons #69e0f0
+------- */
+
+
+
+
