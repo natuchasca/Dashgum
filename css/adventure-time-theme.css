@@ -14,7 +14,8 @@
 /* Colores
 gris Azulado #41495c
 gris claro #f0f0f0
-lila hover #9a4c9c
+lila active #9a4c9c
+rosa hover #e06ea9
 gris icons #969696
 cian icons #69e0f0
 ------- */
@@ -25,42 +26,13 @@ cian icons #69e0f0
 
 
 
-/*	Header y Nav FIXED  */
+/*	Header  */
 
 .header {
 	padding: 10px 20px;
 	width: 100%;
 	position: fixed; 
 	z-index: 1;
-}
-
-.logo {
-	font-size: 20px;
-}
-
-.logout {
-	background-color: #9a4c9c;
-	color: white;
-	width: 100%;
-	height: 30px;
-	border-radius: 10px;
-	margin-top: -32px;
-}
-
-#sidebar {
-	position: fixed; 
-	left: 0;
-	top: 50px;
-	width: 210px;
-	height: 100%;
-	padding: 20px 0px;
-	margin-left: -210px;
-}
-
-
-#sidebar, .black-bg, .logo {
-	background-color: #41495c;
-	color: white;
 }
 
 .sidebar-toggle-box {
@@ -70,86 +42,144 @@ cian icons #69e0f0
 	font-size: 25px;
 }
 
-li.sub-menu a:hover {
+.logo {
+	font-size: 20px;
+}
+
+.nav > li > a.logout {
 	background-color: #9a4c9c;
 	color: white;
-	text-decoration: none;
-
+	height: 30px;
+	border-radius: 10px;
+	margin-top: -32px;
+	padding: 5px 20px;
+	margin-right: 5px;
 }
 
-li.sub-menu {
-	color: #969696;
+.nav > li > a.logout:hover {
+	background-color: #e06ea9;
+	color: white;
+}
+
+#sidebar, .black-bg, .logo {
+	background-color: #41495c;
+	color: white;
+}
+
+
+
+/*	Nav FIXED  */
+
+.profile {
+	margin-left: -40px;
+}
+
+#sidebar {
+	position: fixed; 
+	left: 0;
+	top: 50px;
+	width: 210px;
+	height: 100%;
+	padding: 20px 0px;
+	margin-left: 0px;
+	z-index: 1;
+}
+
+.sidebar-menu > li {
+	margin-left: -30px;
+	margin-right: 10px;
 	list-style: none;
-	width: 100%;
-	height: 50px;
+	list-style-position: inside;
 }
 
-li.sub-menu > a {
+.sub-menu > a {
 	color: #969696;
-	width: 200px;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-decoration: none;
+	display: block;
 }
 
 .sub-menu i {
 	margin-right: 10px;
-	font-size: 18px;
+	font-size: 16px;
 }
+
+li.sub-menu > a {
+	color: #969696;
+}
+
+
+/* EFECTOS  MENU */
+
+.sub-menu > a.active {
+	background-color: #9a4c9c;
+	color: white;
+}
+
+.sidebar-menu > li:hover {
+	background-color: #e06ea9;
+}
+
+.sidebar-menu > li a:hover {
+	color: white;
+	text-decoration: none;
+}
+
 
 
 /* Main Content  */
 
-.main-chart {
-	background-color: #f0f0f0;
-	padding: 100px 30px;
+#main-content {
+	margin-left: 210px;
 }
+
+.wrapper {
+	background-color: #f0f0f0;
+	padding: 80px 20px;
+}
+
 
 .box1 {
 	color: #969696;
 	text-align: center;
-	width: 130px;
+	width: 120px;
 	height: 120px;
 	border-bottom: 1px solid black;
+	padding: 10px 0px;
 }
 
 .box1 > span {
 	font-size: 50px;
 }
 
-.orange {
+.box0 p {
 	display: none;
 }
 
-.box0:hover  {
-	text-align: center;
-	background-color: white;
-	width: 150px;
-	height: 170px;
+.box1:hover {
+	border-bottom: none;
 }
 
-.orange:hover {
+.box0:hover  {
+	background-color: white;
+	width: 150px;
+	height: 180px;
+	cursor: pointer;
+	display: block;
+	z-index: 0;
+}
+
+.box0:hover p {
 	color: #FF7E00;
 	font-size: 12px;
 	text-align: center;
+	display: block;
 }
 
-.ds {
-	padding: 50px 10px 0px 10px;
-}
 
-.lila {
-	background-color: #9a4c9c;
-	color: white;
-	width: 100%;
-	height: 50px;
-	text-align: center;
-	padding: 18px;
-	font-size: 16px;
-}
 
-.bg-theme {
-	color: white;
-	background-color: #69e0f0;
-	margin-bottom: 40px;
-}
 
 /* Videos */
 
@@ -178,9 +208,13 @@ hr.divider {
 
 /* Candy section */
 
-.thumb {
-	float: left;
-	margin-right: 10px;
+.candy {
+	padding: 10px 10px;
+	background-color: white;
+	margin-top: -30px;
+	width: 25%;
+	height: 100%;
+	margin-right: 0px;
 }
 
 .desc {
@@ -191,5 +225,66 @@ hr.divider {
 	margin-top: 20px;
 }
 
+.thumb {
+	float: left;
+	margin-right: 10px;
+}
+
+.lila {
+	background-color: #9a4c9c;
+	color: white;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 18px;
+	font-size: 14px;
+}
+
+.bg-theme {
+	color: white;
+	background-color: #69e0f0;
+	margin-bottom: 40px;
+}
+
+/* ******* */
+/* BUTTONS */
+
+
+
+/* ******* */
+/* GALLERY */
+
+.photo {
+	margin-bottom: 20px;
+}
+
+
+/* ******* */
+/* LOG IN */
+
+#login-page {
+	background-color: #f0f0f0;
+	padding: 70px 0px;
+}
+
+.form-login {
+	background-color: white;
+	width: 350px;
+	margin: 0 auto;
+	padding: 0px 20px 20px 20px;
+	text-align: center;
+}
+
+.form-login-heading {
+	background-color: #69e0f0;
+	color: white;
+	width: 350px;
+	height: 100px;
+	text-align: center;
+	padding: 20px 40px; 
+	margin-bottom: 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
 
 
