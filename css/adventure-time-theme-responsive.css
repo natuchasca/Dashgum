@@ -1,6 +1,11 @@
 /*Inserta tu Codigo Responsive*/
 
+
+
 .visible-xs {
 	display: inline-block;
 }
 
+#sidebar {
+	margin-left: -210px;
+}
