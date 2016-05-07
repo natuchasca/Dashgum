@@ -49,6 +49,11 @@ body {
 	font-size: 20px;
 }
 
+a.logo:hover {
+	color: #e06ea9;
+	text-decoration: none;
+}
+
 .nav > li > a.logout {
 	background-color: #9a4c9c;
 	color: white;
