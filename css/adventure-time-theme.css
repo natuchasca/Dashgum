@@ -8,11 +8,11 @@
 }
 
 .sidebar-closed #sidebar {
-    margin-left: -180px;
+    margin-left: -210px;
 }
 
 /* Colores
-gris Azulado #41495c
+Azulado #41495c
 gris claro #f0f0f0
 lila active #9a4c9c
 rosa hover #e06ea9
@@ -24,7 +24,10 @@ cian icons #69e0f0
 	width: 100%;
 }
 
-
+body {
+	background-color: #f0f0f0;
+	color: grey;
+}
 
 /*	Header  */
 
@@ -129,37 +132,48 @@ li.sub-menu > a {
 
 
 
-/* Main Content  */
+/* Main Content */
 
 #main-content {
 	margin-left: 210px;
+	padding: 50px 20px;
+}
+
+.pt-25 {
+	padding-top: 25px;	
 }
 
 .wrapper {
+	width: 100%;
 	background-color: #f0f0f0;
-	padding: 80px 20px;
+	padding-top: 10px;	
 }
 
+
+
+/* Icons y hover */
 
 .box1 {
 	color: #969696;
 	text-align: center;
 	width: 120px;
 	height: 120px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #969696;
 	padding: 10px 0px;
+	display: block;
 }
 
 .box1 > span {
 	font-size: 50px;
-}
-
-.box0 p {
-	display: none;
+	text-align: center;
 }
 
 .box1:hover {
 	border-bottom: none;
+}
+
+.box0 p {
+	display: none;
 }
 
 .box0:hover  {
@@ -167,8 +181,10 @@ li.sub-menu > a {
 	width: 150px;
 	height: 180px;
 	cursor: pointer;
-	display: block;
-	z-index: 0;
+	text-align: center;
+	-webkit-box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+	box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
 }
 
 .box0:hover p {
@@ -180,8 +196,11 @@ li.sub-menu > a {
 
 
 
-
 /* Videos */
+
+.page-header h1, h4 {
+	color: grey;
+}
 
 .buttons > a {
 	margin-right: 10px;
@@ -194,7 +213,7 @@ hr.divider {
 	margin: 20px 0px;
 }
 
-.showback {
+.showback, .form-panel, .content-panel {
 	background-color: white;
 	width: 100%;
 	height: 100%;
@@ -211,10 +230,16 @@ hr.divider {
 .candy {
 	padding: 10px 10px;
 	background-color: white;
-	margin-top: -30px;
-	width: 25%;
-	height: 100%;
-	margin-right: 0px;
+}
+
+.lila {
+	background-color: #9a4c9c;
+	color: white;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 18px;
+	font-size: 14px;
 }
 
 .desc {
@@ -230,21 +255,13 @@ hr.divider {
 	margin-right: 10px;
 }
 
-.lila {
-	background-color: #9a4c9c;
-	color: white;
-	width: 100%;
-	height: 50px;
-	text-align: center;
-	padding: 18px;
-	font-size: 14px;
-}
-
 .bg-theme {
 	color: white;
 	background-color: #69e0f0;
 	margin-bottom: 40px;
 }
+
+
 
 /* ******* */
 /* BUTTONS */
@@ -281,10 +298,12 @@ hr.divider {
 	width: 350px;
 	height: 100px;
 	text-align: center;
-	padding: 20px 40px; 
+	padding: 25px 40px; 
 	margin-bottom: 20px;
 	margin-left: -20px;
 	margin-right: -20px;
+	text-transform: uppercase;
+	font-size: 24px;
 }
 
 
